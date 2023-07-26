@@ -14,9 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <!-- 繰り返したいコレクションを指定、employeeは毎度上書きされる -->
             <tr th:each="employee : ${employees}">
-                <!-- employee内のフィールドを出力する -->
                 <td th:text="${employee.id}"></td>
                 <td th:text="${employee.name}"></td>
                 <td th:text="${employee.department}"></td>
